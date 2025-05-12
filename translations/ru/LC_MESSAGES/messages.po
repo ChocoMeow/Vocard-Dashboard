@@ -64,7 +64,7 @@ msgstr "Ссылка скопирована в буфер обмена"
 
 #: templates/index.html:58
 msgid "Added {0} into the queue."
-msgstr "Добавлено {0} в очередь."
+msgstr "Трек {0} добавлен  в очередь."
 
 #: templates/index.html:59
 msgid "Added {0} songs into the queue."
@@ -96,7 +96,7 @@ msgstr "{0} и {1} поменялись местами."
 
 #: templates/index.html:66
 msgid "Moved {0} to {1}."
-msgstr "Перемещено {0} в {1}."
+msgstr "Трек {0} перемещен на позицию {1}."
 
 #: templates/index.html:67
 msgid "Shuffled the {0}"
