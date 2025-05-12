@@ -652,7 +652,7 @@ msgstr "Очередь"
 
 #: templates/index.html:731
 msgid "Toggle History"
-msgstr "Переключить историю"
+msgstr "Посмотреть историю"
 
 #: templates/index.html:739
 msgid "Close"
