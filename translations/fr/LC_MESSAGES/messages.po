@@ -1,18 +1,19 @@
-# Chinese (Traditional, Hong Kong SAR China) translations for PROJECT.
+# French translations for Vocard-Dashboard.
 # Copyright (C) 2025 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the Vocard-Dashboard
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
+"Project-Id-Version:  2.0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-05-29 09:41+0800\n"
-"PO-Revision-Date: 2025-01-11 11:25+0800\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: zh_Hant_HK\n"
-"Language-Team: zh_Hant_HK <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"PO-Revision-Date: 2025-05-11 20:07+0200\n"
+"Last-Translator: Buco7854\n"
+"Language: fr\n"
+"Language-Team: FR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,515 +21,542 @@ msgstr ""
 
 #: templates/footer.html:6
 msgid "Support"
-msgstr "支援"
+msgstr "Support"
 
 #: templates/footer.html:7
 msgid "Document"
-msgstr "文件"
+msgstr "Documentation"
 
 #: templates/footer.html:21
 msgid "Donation"
-msgstr "捐款"
+msgstr "Don"
 
 #: templates/footer.html:28
 msgid "Votes"
-msgstr "投票"
+msgstr "Votes"
 
 #: templates/footer.html:39
 msgid "Legal"
-msgstr "法律"
+msgstr "Mentions légales"
 
 #: templates/footer.html:43
 msgid "Privacy Policy"
-msgstr "隱私權政策"
+msgstr "Politique de confidentialité"
 
 #: templates/footer.html:48
 msgid "Terms Of Service"
-msgstr "服務條款"
+msgstr "Conditions d'utilisation"
 
 #: templates/index.html:54
 msgid "Cancel"
-msgstr "取消"
+msgstr "Annuler"
 
 #: templates/index.html:55
 msgid "Confirm"
-msgstr "確認"
+msgstr "Confirmer"
 
 #: templates/index.html:56
 msgid "Accept"
-msgstr "接受"
+msgstr "Accepter"
 
 #: templates/index.html:57
 msgid "Link copied to clipboard"
-msgstr "已複製鏈接到剪貼簿"
+msgstr "Lien copié dans le presse-papiers"
 
 #: templates/index.html:58
+#, python-brace-format
 msgid "Added {0} into the queue."
-msgstr "已將 {0} 加入播放列表。"
+msgstr "Ajouté {0} dans la file d'attente."
 
 #: templates/index.html:59
+#, python-brace-format
 msgid "Added {0} songs into the queue."
-msgstr "已將 {0} 首歌曲加入播放列表。"
+msgstr "Ajouté {0} chansons dans la file d'attente."
 
 #: templates/index.html:60
 msgid "Paused the player."
-msgstr "播放器已暫停。"
+msgstr "Lecture mise en pause."
 
 #: templates/index.html:61
 msgid "Resumed the player."
-msgstr "播放器已恢復播放。"
+msgstr "Lecture reprise."
 
 #: templates/index.html:62
+#, python-brace-format
 msgid "Forward the player to {0}."
-msgstr "將播放器快進至 {0}。"
+msgstr "Avancé le lecteur à {0}."
 
 #: templates/index.html:63
+#, python-brace-format
 msgid "Rewind the player to {0}."
-msgstr "將播放器倒退至 {0}。"
+msgstr "Rembobiné le lecteur à {0}."
 
 #: templates/index.html:64
+#, python-brace-format
 msgid "Set volume to {0}."
-msgstr "音量設置為 {0}。"
+msgstr "Volume réglé à {0}."
 
 #: templates/index.html:65
+#, python-brace-format
 msgid "{0} and {1} are swapped."
-msgstr "{0} 和 {1} 位置已互換。"
+msgstr "{0} et {1} sont échangés."
 
 #: templates/index.html:66
+#, python-brace-format
 msgid "Moved {0} to {1}."
-msgstr "已將 {0} 移動至 {1}。"
+msgstr "{0} déplacé à {1}."
 
 #: templates/index.html:67
+#, python-brace-format
 msgid "Shuffled the {0}"
-msgstr "{0} 已隨機播放。"
+msgstr "{0} mélangé."
 
 #: templates/index.html:68
+#, python-brace-format
 msgid "The repeat mode has been set to {0}"
-msgstr "重複模式已設置為 {0}。"
+msgstr "Le mode répétition a été défini sur {0}."
 
 #: templates/index.html:69
+#, python-brace-format
 msgid "Removed {0} from the queue."
-msgstr "已從播放列表中移除 {0}。"
+msgstr "{0} retiré de la file d'attente."
 
 #: templates/index.html:70
+#, python-brace-format
 msgid "Removed {0} tracks from the queue."
-msgstr "已從播放列表中移除 {0} 首歌曲。"
+msgstr "{0} titres retirés de la file d'attente."
 
 #: templates/index.html:71
+#, python-brace-format
 msgid "Cleared {0} list."
-msgstr "已清除 {0} 清單。"
+msgstr "Liste {0} vidée."
 
 #: templates/index.html:72
+#, python-brace-format
 msgid "Autoplay mode is now {0}."
-msgstr "自動播放模式現在為 {0}。"
+msgstr "Le mode lecture automatique est désormais {0}."
 
 #: templates/index.html:73
 msgid "enabled"
-msgstr "啟用"
+msgstr "activé"
 
 #: templates/index.html:74
 msgid "disabled"
-msgstr "停用"
+msgstr "désactivé"
 
 #: templates/index.html:75
 msgid "Results found"
-msgstr "搜尋結果"
+msgstr "résultats trouvés"
 
 #: templates/index.html:78
 msgid "You are not able to select this bot!"
-msgstr "你無法選擇這個機械人！"
+msgstr "Vous ne pouvez pas sélectionner ce bot !"
 
 #: templates/index.html:80
 msgid "You need to connect a bot in order to perform this action."
-msgstr "您需要連接一個機械人才能執行此操作。"
+msgstr "Vous devez connecter un bot pour effectuer cette action."
 
 #: templates/index.html:82 templates/index.html:315
 msgid "No message for you at this time."
-msgstr "目前沒有消息。"
+msgstr "Aucun message pour vous pour le moment."
 
 #: templates/index.html:84
 msgid "Add more songs to the queue before shuffling."
-msgstr "在隨機播放之前，請添加更多歌曲到播放列表。"
+msgstr "Ajoutez plus de morceaux à la file avant de mélanger."
 
 #: templates/index.html:87
 msgid "Track"
-msgstr "曲目"
+msgstr "Titre"
 
 #: templates/index.html:88
 msgid "Recommendation for this song"
-msgstr "這首歌的推薦"
+msgstr "Recommandation pour ce morceau"
 
 #: templates/index.html:89
 msgid "Based on your song your picked"
-msgstr "根據您的歌曲播放歷史"
+msgstr "Basé sur le morceau que vous avez choisi"
 
 #: templates/index.html:93
 msgid "Playlist name"
-msgstr "播放列表名稱"
+msgstr "Nom de la playlist"
 
 #: templates/index.html:94
 msgid "e.g. My playlist"
-msgstr "例如: 我的播放清單"
+msgstr "ex : Ma playlist"
 
 #: templates/index.html:95
 msgid "Playlist type"
-msgstr "播放列表類型"
+msgstr "Type de playlist"
 
 #: templates/index.html:96
 msgid "Standard Playlist"
-msgstr "標準播放列表"
+msgstr "Playlist standard"
 
 #: templates/index.html:97
 msgid "Online Playlist"
-msgstr "線上播放列表"
+msgstr "Playlist en ligne"
 
 #: templates/index.html:98
 msgid "Playlist Url"
-msgstr "播放列表網址"
+msgstr "URL de la playlist"
 
 #: templates/index.html:100
 msgid "e.g. Youtube or Spotify playlist url"
-msgstr "例如：Youtube 或 Spotify 播放列表網址"
+msgstr "ex : URL d'une playlist Youtube ou Spotify"
 
 #: templates/index.html:101
 msgid "Create"
-msgstr "創建"
+msgstr "Créer"
 
 #: templates/index.html:102
 msgid "Delete"
-msgstr "刪除"
+msgstr "Supprimer"
 
 #: templates/index.html:105
 msgid "playlist"
-msgstr "播放列表"
+msgstr "playlist"
 
 #: templates/index.html:106
 msgid "share"
-msgstr "分享"
+msgstr "partager"
 
 #: templates/index.html:107
 msgid "link"
-msgstr "鏈接"
+msgstr "lien"
 
 #: templates/index.html:110 templates/index.html:377
 msgid "Create Playlist"
-msgstr "創建播放清單"
+msgstr "Créer une playlist"
 
 #: templates/index.html:112
 msgid ""
 "Create and personalize your playlist for every mood, crafted exclusively "
 "by you."
-msgstr "為每個心情創建並個性化您的播放列表，完全由您打造。"
+msgstr ""
+"Créez et personnalisez votre playlist pour chaque humeur, élaborée "
+"uniquement par vous."
 
 #: templates/index.html:115
 msgid "Rename Playlist"
-msgstr "重新命名播放清單"
+msgstr "Renommer la playlist"
 
 #: templates/index.html:117
 msgid ""
 "Allows you to change the name of your existing collections of songs for "
 "better organization."
-msgstr "允許您更改現有歌曲合集的名稱，以便更好地組織。"
+msgstr ""
+"Vous permet de renommer vos collections de morceaux afin de mieux vous "
+"organiser."
 
 #: templates/index.html:120
 msgid "Delete Playlist"
-msgstr "刪除播放清單"
+msgstr "Supprimer la playlist"
 
 #: templates/index.html:122
 msgid "Enables the removal of unwanted collections of songs from your library."
-msgstr "啟用從您的音樂庫中移除不需要的歌曲合集。"
+msgstr "Permet de supprimer des playlists non désirées de votre bibliothèque."
 
 #: templates/index.html:128
 msgid "Adjust the configurations on your server for an optimized experience."
-msgstr "調整伺服器上的配置以獲得最佳體驗。"
+msgstr "Ajustez la configuration de votre serveur pour une expérience optimale."
 
 #: templates/index.html:129
 msgid "General"
-msgstr "一般"
+msgstr "Général"
 
 #: templates/index.html:130
 msgid "You are now listening in"
-msgstr "您現在正在收聽"
+msgstr "Vous écoutez actuellement dans"
 
 #: templates/index.html:131
 msgid "My Servers"
-msgstr "伺服器"
+msgstr "Mes serveurs"
 
 #: templates/index.html:133
 msgid "Please select a server whose settings you would like to modify"
-msgstr "請選擇您想要修改設定的伺服器"
+msgstr ""
+"Veuillez sélectionner un serveur dont vous souhaitez modifier les "
+"paramètres"
 
 #: templates/index.html:134
 msgid "Invite the Bot to Your Server"
-msgstr "邀請機器人到您的伺服器"
+msgstr "Inviter le bot sur votre serveur"
 
 #: templates/index.html:136
 msgid "The bot is not currently a member of the following server"
-msgstr "機器人目前不是以下伺服器的成員"
+msgstr "Le bot n'est actuellement pas membre du serveur sélectionné."
 
 #: templates/index.html:138
 msgid "Careful — you have unsaved changes!"
-msgstr "小心 — 您有未保存的更改！"
+msgstr "Attention — vous avez des modifications non enregistrées !"
 
 #: templates/index.html:139
 msgid "Reset"
-msgstr "重置"
+msgstr "Réinitialiser"
 
 #: templates/index.html:140
 msgid "Save Changes"
-msgstr "保存更改"
+msgstr "Sauvegarder"
 
 #: templates/index.html:141
 msgid "Invite to this server"
-msgstr "邀請機器人到您的伺服器"
+msgstr "Inviter sur ce serveur"
 
 #: templates/index.html:142
 msgid "members"
-msgstr "成員"
+msgstr "membres"
 
 #: templates/index.html:145
 msgid "Prefix"
-msgstr "機器人前綴"
+msgstr "Préfixe"
 
 #: templates/index.html:147
 msgid "Change the default prefix for message commands."
-msgstr "更改消息命令的預設前綴。"
+msgstr "Changez le préfixe par défaut pour les commandes message."
 
 #: templates/index.html:150 templates/index.html:616
 msgid "Language"
-msgstr "語言"
+msgstr "Langue"
 
 #: templates/index.html:152
 msgid ""
 "You can choose your preferred language, the bot message will change to "
 "the language you set."
-msgstr "您可以選擇您偏好的語言，機器人消息將更改為您設置的語言。"
+msgstr ""
+"Vous pouvez choisir votre langue préférée, les messages du bot "
+"utiliseront cette langue."
 
 #: templates/index.html:155
 msgid "Queue Mode"
-msgstr "隊列"
+msgstr "Mode de file"
 
 #: templates/index.html:157
 msgid "Change to another type of queue mode."
-msgstr "更改為另一種隊列模式。"
+msgstr "Changez pour un autre mode de file d'attente."
 
 #: templates/index.html:160
 msgid "DJ Role"
-msgstr "DJ 角色"
+msgstr "Rôle DJ"
 
 #: templates/index.html:162
 msgid "Set a DJ role or remove DJ role."
-msgstr "設置 DJ 角色或移除 DJ 角色。"
+msgstr "Définissez ou retirez le rôle de DJ."
 
 #: templates/index.html:165
 msgid "24/7 Mode"
-msgstr "24/7 模式"
+msgstr "Mode 24/7"
 
 #: templates/index.html:167
 msgid "Toggles 24/7 mode, which disables automatic inactivity-based disconnects."
-msgstr "切換 24/7 模式，禁用基於不活動的自動斷開連接。"
+msgstr ""
+"Active/désactive le mode 24/7, qui empêche la déconnexion automatique en "
+"cas d'inactivité."
 
 #: templates/index.html:170
 msgid "Vote Bypass"
-msgstr "投票繞過"
+msgstr "Ignorer le vote"
 
 #: templates/index.html:172
 msgid ""
 "Toggles in the voting system provide you the option to participate or "
 "abstain from voting to skip a song."
-msgstr "切換投票系統，讓您可以選擇參加或放棄投票以跳過歌曲。"
+msgstr "Permet de participer ou non au système de vote pour passer un morceau."
 
 #: templates/index.html:175
 msgid "Toggle Music Controller"
-msgstr "切換音樂控制器"
+msgstr "Contrôleur musical"
 
 #: templates/index.html:177
 msgid ""
 "Toggles to send a message when clicking the button in the music "
 "controller."
-msgstr "切換在音樂控制器中點擊按鈕時發送消息。"
+msgstr ""
+"Active/désactive l'envoi d'un message lors de l'utilisation du contrôleur"
+" musical."
 
 #: templates/index.html:180
 msgid "Duplicate Track"
-msgstr "重複曲目"
+msgstr "Titre en double"
 
 #: templates/index.html:182
 msgid "Toggle Vocard to prevent duplicate songs from queuing."
-msgstr "切換 Vocard 以防止重複歌曲進入隊列。"
+msgstr "Empêche l'ajout de titres en double dans la file d'attente."
 
 #: templates/index.html:185
 msgid "Voice Status Template"
-msgstr "語音狀態模板"
+msgstr "Modèle de statut vocal"
 
 #: templates/index.html:187
 msgid "Customize the channel topic template (Displayed while playing music)."
-msgstr "自定義頻道主題模板（在播放音樂時顯示）。"
+msgstr "Personnalisez le sujet du canal (affiché lors de l'écoute de la musique)."
 
 #: templates/index.html:191
 msgid "Enable Effect"
-msgstr "啟用效果"
+msgstr "Activer un effet"
 
 #: templates/index.html:192
 msgid "Turn on the music sound effect."
-msgstr "打開音樂音效。"
+msgstr "Activer les effets audio."
 
 #: templates/index.html:193
 msgid "Reset all filter."
-msgstr "重置所有過濾器。"
+msgstr "Réinitialiser tous les filtres."
 
 #: templates/index.html:194
+#, python-brace-format
 msgid "Applied {0} filter."
-msgstr "已應用 {0} 過濾器。"
+msgstr "Filtre {0} appliqué."
 
 #: templates/index.html:195
+#, python-brace-format
 msgid "Removed {0} filter."
-msgstr "已移除 {0} 過濾器。"
+msgstr "Filtre {0} retiré."
 
 #: templates/index.html:197
 msgid "None"
-msgstr "禁用"
+msgstr "Aucun"
 
 #: templates/index.html:198
 msgid "karaoke"
-msgstr "卡拉OK"
+msgstr "karaoké"
 
 #: templates/index.html:199
 msgid "tremolo"
-msgstr "顫音"
+msgstr "trémolo"
 
 #: templates/index.html:200
 msgid "vibrato"
-msgstr "顫抖"
+msgstr "vibrato"
 
 #: templates/index.html:201
 msgid "rotation"
-msgstr "旋轉"
+msgstr "rotation"
 
 #: templates/index.html:202
 msgid "distortion"
-msgstr "失真"
+msgstr "distorsion"
 
 #: templates/index.html:203
 msgid "lowpass"
-msgstr "低通"
+msgstr "filtre passe-bas"
 
 #: templates/index.html:204
 msgid "nightcore"
-msgstr "夜核"
+msgstr "nightcore"
 
 #: templates/index.html:205
 msgid "8D"
-msgstr ""
+msgstr "8D"
 
 #: templates/index.html:206
 msgid "vaporwave"
-msgstr "蒸氣波"
+msgstr "vaporwave"
 
 #: templates/index.html:210
 msgid "Play now"
-msgstr "播放"
+msgstr "Jouer maintenant"
 
 #: templates/index.html:211
 msgid "Play next"
-msgstr "下首播放"
+msgstr "Lire ensuite"
 
 #: templates/index.html:212
 msgid "Add to queue"
-msgstr "歷史隊列"
+msgstr "Ajouter à la file"
 
 #: templates/index.html:213
 msgid "Remove from queue"
-msgstr "從隊列中移除"
+msgstr "Retirer de la file"
 
 #: templates/index.html:214
 msgid "Skip to"
-msgstr "跳過"
+msgstr "Passer à"
 
 #: templates/index.html:215
 msgid "Back to"
-msgstr "返回頂部"
+msgstr "Retour à"
 
 #: templates/index.html:216
 msgid "Move to top"
-msgstr "返回頂部"
+msgstr "Mettre en haut"
 
 #: templates/index.html:217
 msgid "Move to bottom"
-msgstr "移至底部"
+msgstr "Mettre en bas"
 
 #: templates/index.html:218
 msgid "Copy link"
-msgstr "複製鏈接"
+msgstr "Copier le lien"
 
 #: templates/index.html:219
 msgid "Recommendation"
-msgstr "推薦"
+msgstr "Recommandation"
 
 #: templates/index.html:220
 msgid "Get lyrics"
-msgstr "獲取歌詞"
+msgstr "Obtenir les paroles"
 
 #: templates/index.html:221
 msgid "Play shuffle"
-msgstr "隨機播放"
+msgstr "Lecture aléatoire"
 
 #: templates/index.html:222
 msgid "Remove track"
-msgstr "移除曲目"
+msgstr "Retirer le titre"
 
 #: templates/index.html:223
 msgid "Add to playlist"
-msgstr "添加到播放列表"
+msgstr "Ajouter à la playlist"
 
 #: templates/index.html:273
 msgid "Search your input and add it to the queue"
-msgstr "搜索您的輸入並將其添加到隊列中"
+msgstr "Recherchez votre saisie et ajoutez-la à la file"
 
 #: templates/index.html:288
 msgid "Add All"
-msgstr "全部添加"
+msgstr "Tout ajouter"
 
 #: templates/index.html:302 templates/index.html:309
 msgid "Inbox"
-msgstr "收件匣"
+msgstr "Boîte de réception"
 
 #: templates/index.html:350
 msgid "Home"
-msgstr "首頁"
+msgstr "Accueil"
 
 #: templates/index.html:357
 msgid "Explore"
-msgstr "探索"
+msgstr "Explorer"
 
 #: templates/index.html:364
 msgid "Server"
-msgstr "伺服器"
+msgstr "Serveur"
 
 #: templates/index.html:387
 msgid "Light Mode"
-msgstr "淺色模式"
+msgstr "Mode clair"
 
 #: templates/index.html:393 templates/index.html:611
 msgid "Settings"
-msgstr "設置"
+msgstr "Paramètres"
 
 #: templates/index.html:403
 msgid "Help"
-msgstr "幫助"
+msgstr "Aide"
 
 #: templates/index.html:411
 msgid "Logout"
-msgstr "登出"
+msgstr "Déconnexion"
 
 #: templates/index.html:422
 msgid ""
 "Some errors occurred and the dashboard could not\n"
 "                        be connected"
-msgstr "發生一些錯誤，儀表板無法連接"
+msgstr "Des erreurs sont survenues et le tableau de bord n’a pas pu se connecter."
 
 #: templates/index.html:432
 msgid "Can't Find You on Discord"
-msgstr "在 Discord 上找不到您"
+msgstr "Impossible de vous trouver sur Discord"
 
 #: templates/index.html:434
 msgid ""
@@ -538,15 +566,18 @@ msgid ""
 "                            granted it the necessary permissions to "
 "access your\n"
 "                            server information."
-msgstr "我無法在任何 Discord 伺服器中找到您。請檢查您是否已邀請我們的機器人並授予其訪問您伺服器信息的必要權限。"
+msgstr ""
+"Je n’ai pas pu vous localiser sur un serveur Discord. Veuillez vérifier "
+"que le bot a été invité sur le serveur et dispose des autorisations "
+"nécessaires."
 
 #: templates/index.html:442 templates/index.html:510
 msgid "Reload Page"
-msgstr "重新載入頁面"
+msgstr "Recharger la page"
 
 #: templates/index.html:452
-msgid "No History Searches Found"
-msgstr "未找到歷史搜索"
+msgid "No Hisotry Searches Found"
+msgstr "Aucune recherche récente trouvée"
 
 #: templates/index.html:454
 msgid ""
@@ -556,15 +587,18 @@ msgid ""
 "                            start right now! Simply enter the name of "
 "your\n"
 "                            favorite song or artist in the search bar."
-msgstr "看起來您還沒有搜索任何歌曲。別擔心，您的音樂之旅可以立即開始！只需在搜索欄中輸入您最喜愛的歌曲或藝術家的名稱。"
+msgstr ""
+"Il semble que vous n’ayez encore rien recherché. Votre aventure musicale "
+"commence maintenant ! Saisissez simplement le nom d’une chanson ou d’un "
+"artiste dans la barre de recherche."
 
 #: templates/index.html:461
 msgid "Search Now"
-msgstr "立即搜索"
+msgstr "Rechercher"
 
 #: templates/index.html:470
 msgid "Server Not Detected"
-msgstr "未檢測到伺服器"
+msgstr "Aucun serveur détecté"
 
 #: templates/index.html:472
 msgid ""
@@ -572,25 +606,29 @@ msgid ""
 "                            note, you must possess ‘Manage Guild’ "
 "permissions on\n"
 "                            the server you wish to manage."
-msgstr "確保我已被添加到您的伺服器。請注意，您必須擁有要管理的伺服器的「管理公會」權限。"
+msgstr ""
+"Veuillez vérifier que le bot a bien été ajouté à votre serveur et que "
+"vous disposez de la permission 'Gérer le serveur'."
 
 #: templates/index.html:478
 msgid "Refresh page"
-msgstr "重新載入頁面"
+msgstr "Rafraîchir la page"
 
 #: templates/index.html:487
 msgid "Lyrics Not Found"
-msgstr "找不到歌詞"
+msgstr "Paroles non trouvées"
 
 #: templates/index.html:489
 msgid ""
 "Sorry, but I’m unable to search for the lyrics\n"
 "                            of this song. Please try searching online."
-msgstr "抱歉，我無法搜索這首歌的歌詞。請嘗試在線搜索。"
+msgstr ""
+"Désolé, je ne peux pas trouver les paroles de cette chanson. Essayez de "
+"les chercher en ligne."
 
 #: templates/index.html:500
 msgid "Temporary Access Limit Reached"
-msgstr "已達到臨時訪問限制"
+msgstr "Limite d'accès temporaire atteinte"
 
 #: templates/index.html:502
 msgid ""
@@ -600,125 +638,128 @@ msgid ""
 "                            only temporary. You’ll be able to continue "
 "your\n"
 "                            activities after a short break."
-msgstr "看起來您非常活躍，已達到請求的限制。別擔心，這只是暫時的。您可以在短暫休息後繼續您的活動。"
+msgstr ""
+"Vous semblez très actif et avez atteint la limite de requêtes. Pas "
+"d’inquiétude, c’est temporaire : vous pourrez bientôt reprendre vos "
+"activités après une courte pause."
 
 #: templates/index.html:518
 msgid "Recently played"
-msgstr "最近播放"
+msgstr "Dernières écoutes"
 
 #: templates/index.html:539
 msgid "Based on your song playback history"
-msgstr "根據您的歌曲播放歷史"
+msgstr "Basé sur votre historique d’écoute"
 
 #: templates/index.html:542
 msgid "Recommendation for today"
-msgstr "今天的推薦"
+msgstr "Recommandation du jour"
 
 #: templates/index.html:562
 msgid "Top 50 Global Hits"
-msgstr "全球前50首熱門歌曲"
+msgstr "Top 50 des hits mondiaux"
 
 #: templates/index.html:563
 msgid "Trending Songs"
-msgstr "熱門歌曲"
+msgstr "Chansons tendance"
 
 #: templates/index.html:583
 msgid "Discover music for every mood"
-msgstr "為每種心情發現音樂"
+msgstr "Découvrez de la musique pour chaque humeur"
 
 #: templates/index.html:584
 msgid "Genres and Moods"
-msgstr "類型和心情"
+msgstr "Genres et ambiances"
 
 #: templates/index.html:608
 msgid ""
 "Manage your account settings and\n"
 "                                    preferences"
-msgstr "管理您的帳戶設置和偏好"
+msgstr "Gérez les paramètres et préférences de votre compte"
 
 #: templates/index.html:649
 msgid "Dark Mode"
-msgstr "夜間模式"
+msgstr "Mode sombre"
 
 #: templates/index.html:651
 msgid ""
 "Quickly toggle between light and\n"
 "                                        dark modes for a personalized."
-msgstr "快速切換光明模式和黑暗模式，為您提供個性化體驗。"
+msgstr "Passez rapidement du mode clair au mode sombre."
 
 #: templates/index.html:703 templates/index.html:911
 msgid "Queue"
-msgstr "隊列"
+msgstr "File d’attente"
 
 #: templates/index.html:711
 msgid "Toggle History"
-msgstr "切換歷史"
+msgstr "Afficher l’historique"
 
 #: templates/index.html:719
 msgid "Close"
-msgstr "關閉"
+msgstr "Fermer"
 
 #: templates/index.html:730
 msgid "Now playing"
-msgstr "現在播放"
+msgstr "En lecture"
 
 #: templates/index.html:767
 msgid "Next in queue"
-msgstr "即將播放"
+msgstr "Suivant dans la file"
 
 #: templates/index.html:768
 msgid "Clear queue"
-msgstr "清除隊列"
+msgstr "Vider la file"
 
 #: templates/index.html:778
 msgid "History queue"
-msgstr "歷史隊列"
+msgstr "Historique de la file"
 
 #: templates/index.html:780
 msgid "Clear history"
-msgstr "清除歷史"
+msgstr "Vider l’historique"
 
 #: templates/index.html:789
 msgid "BACK TO TOP"
-msgstr "返回頂部"
+msgstr "RETOUR EN HAUT"
 
 #: templates/index.html:793
 msgid "Autoplay"
-msgstr "自動播放"
+msgstr "lecture auto"
 
 #: templates/index.html:817
 msgid "Rewind 10s"
-msgstr "倒退10秒"
+msgstr "Reculer de 10s"
 
 #: templates/index.html:825
 msgid "Shuffle"
-msgstr "隨機播放"
+msgstr "Mélanger"
 
 #: templates/index.html:833
 msgid "Back"
-msgstr "返回"
+msgstr "Précédent"
 
 #: templates/index.html:841
 msgid "Play"
-msgstr "播放"
+msgstr "Lecture"
 
 #: templates/index.html:849
 msgid "Skip"
-msgstr "跳過"
+msgstr "Passer"
 
 #: templates/index.html:857
 msgid "Repeat"
-msgstr "重複"
+msgstr "Répéter"
 
 #: templates/index.html:865
 msgid "Forward 10s"
-msgstr "快進10秒"
+msgstr "Avancer de 10s"
 
 #: templates/index.html:894
 msgid "Volume"
-msgstr "音量"
+msgstr "Volume"
 
 #: templates/index.html:903
 msgid "Effect"
-msgstr "效果"
+msgstr "Effet"
 

@@ -21,7 +21,7 @@ Vocard Dashboard is a web-based user interface that allows users to control the 
 * [Vocard Bot (Requires 2.7.0+)](https://github.com/ChocoMeow/Vocard)
 
 ## Setup
-Please see the [Setup Page](https://docs.vocard.xyz/latest/dashboard) in the docs to run this bot yourself!
+Please see the [Setup Page](https://docs.vocard.xyz/latest/dashboard/setup) in the docs to run this bot yourself!
 
 ## Need Help?
 Join the [Vocard Support Discord](https://discord.gg/wRCgB7vBQv) for help or questions.

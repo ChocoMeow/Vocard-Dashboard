@@ -1,13 +1,14 @@
 # Polish translations for Vocard-Dashboard.
 # Copyright (C) 2025 ORGANIZATION
-# This file is distributed under the same license as the Vocard-Dashboard project.
+# This file is distributed under the same license as the Vocard-Dashboard
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 2.0.0\n"
+"Project-Id-Version:  2.0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-01-29 11:15+0800\n"
+"POT-Creation-Date: 2025-05-29 09:41+0800\n"
 "PO-Revision-Date: 2025-04-11 22:19+0200\n"
 "Last-Translator: VeeoN2 <media@veeon.pl>\n"
 "Language: pl\n"
@@ -16,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: templates/footer.html:6
 msgid "Support"
@@ -155,7 +156,7 @@ msgstr "Nie możesz wybrać tego bota!"
 msgid "You need to connect a bot in order to perform this action."
 msgstr "Musisz połączyć bota by wykonać tę czynność."
 
-#: templates/index.html:82 templates/index.html:313
+#: templates/index.html:82 templates/index.html:315
 msgid "No message for you at this time."
 msgstr "Brak nowych wiadomości."
 
@@ -223,7 +224,7 @@ msgstr "udostępnij"
 msgid "link"
 msgstr "link"
 
-#: templates/index.html:110 templates/index.html:375
+#: templates/index.html:110 templates/index.html:377
 msgid "Create Playlist"
 msgstr "Utwórz Playlistę"
 
@@ -241,7 +242,9 @@ msgstr "Zmień nazwę Playlisty"
 msgid ""
 "Allows you to change the name of your existing collections of songs for "
 "better organization."
-msgstr "Umożliwia zmianę nazwy istniejących kolekcji utworów w celu lepszej organizacji."
+msgstr ""
+"Umożliwia zmianę nazwy istniejących kolekcji utworów w celu lepszej "
+"organizacji."
 
 #: templates/index.html:120
 msgid "Delete Playlist"
@@ -253,7 +256,9 @@ msgstr "Umożliwia usuwanie niechcianych kolekcji utworów z biblioteki."
 
 #: templates/index.html:128
 msgid "Adjust the configurations on your server for an optimized experience."
-msgstr "Dostosuj konfiguracje na swoim serwerze, aby uzyskać zoptymalizowane działanie."
+msgstr ""
+"Dostosuj konfiguracje na swoim serwerze, aby uzyskać zoptymalizowane "
+"działanie."
 
 #: templates/index.html:129
 msgid "General"
@@ -307,7 +312,7 @@ msgstr "Prefix"
 msgid "Change the default prefix for message commands."
 msgstr "Zmień domyślny prefix komend."
 
-#: templates/index.html:150 templates/index.html:637
+#: templates/index.html:150 templates/index.html:616
 msgid "Language"
 msgstr "Język"
 
@@ -315,7 +320,9 @@ msgstr "Język"
 msgid ""
 "You can choose your preferred language, the bot message will change to "
 "the language you set."
-msgstr "Możesz wybrać preferowany język, wiadomość bota zostanie zmieniona na ustawiony język."
+msgstr ""
+"Możesz wybrać preferowany język, wiadomość bota zostanie zmieniona na "
+"ustawiony język."
 
 #: templates/index.html:155
 msgid "Queue Mode"
@@ -339,7 +346,9 @@ msgstr "Tryb 24/7"
 
 #: templates/index.html:167
 msgid "Toggles 24/7 mode, which disables automatic inactivity-based disconnects."
-msgstr "Przełącza tryb 24/7, który wyłącza automatyczne rozłączanie się bota przy nieaktywności"
+msgstr ""
+"Przełącza tryb 24/7, który wyłącza automatyczne rozłączanie się bota przy"
+" nieaktywności"
 
 #: templates/index.html:170
 msgid "Vote Bypass"
@@ -503,49 +512,49 @@ msgstr "Wyszukaj swoją fraze i dodaj ją kolejki"
 msgid "Add All"
 msgstr "Dodaj wszysktie"
 
-#: templates/index.html:300 templates/index.html:307
+#: templates/index.html:302 templates/index.html:309
 msgid "Inbox"
 msgstr "Skrzynka odbiorcza"
 
-#: templates/index.html:348
+#: templates/index.html:350
 msgid "Home"
 msgstr "Strona główna"
 
-#: templates/index.html:355
+#: templates/index.html:357
 msgid "Explore"
 msgstr "Odkryj"
 
-#: templates/index.html:362
+#: templates/index.html:364
 msgid "Server"
 msgstr "Serwer"
 
-#: templates/index.html:385
+#: templates/index.html:387
 msgid "Light Mode"
 msgstr "Tryb jasny"
 
-#: templates/index.html:391 templates/index.html:632
+#: templates/index.html:393 templates/index.html:611
 msgid "Settings"
 msgstr "Ustawienia"
 
-#: templates/index.html:401
+#: templates/index.html:403
 msgid "Help"
 msgstr "Pomoc"
 
-#: templates/index.html:409
+#: templates/index.html:411
 msgid "Logout"
 msgstr "Wyloguj się"
 
-#: templates/index.html:420
+#: templates/index.html:422
 msgid ""
 "Some errors occurred and the dashboard could not\n"
 "                        be connected"
 msgstr "Wystąpił błąd i panel nie mógł zostać połączony\n"
 
-#: templates/index.html:430
+#: templates/index.html:432
 msgid "Can't Find You on Discord"
 msgstr "Nie odnaleziono twojego konta Discord!"
 
-#: templates/index.html:432
+#: templates/index.html:434
 msgid ""
 "I'm unable to locate you in any Discord\n"
 "                            server. Please check that you've invited our "
@@ -553,17 +562,19 @@ msgid ""
 "                            granted it the necessary permissions to "
 "access your\n"
 "                            server information."
-msgstr "Nie zostałeś odnaleziony w żadnym serwerze Discord. Upewnij się że zaprosiłeś bota na serwer oraz przydzieliłeś mu wymagane uprawnienia."
+msgstr ""
+"Nie zostałeś odnaleziony w żadnym serwerze Discord. Upewnij się że "
+"zaprosiłeś bota na serwer oraz przydzieliłeś mu wymagane uprawnienia."
 
-#: templates/index.html:440 templates/index.html:508
+#: templates/index.html:442 templates/index.html:510
 msgid "Reload Page"
 msgstr "Przeładuj stronę"
 
-#: templates/index.html:450
+#: templates/index.html:452
 msgid "No History Searches Found"
 msgstr "Brak historii wyszukiwania"
 
-#: templates/index.html:452
+#: templates/index.html:454
 msgid ""
 "It seems like you haven’t searched for any\n"
 "                            songs yet. No worries, your musical journey "
@@ -571,43 +582,50 @@ msgid ""
 "                            start right now! Simply enter the name of "
 "your\n"
 "                            favorite song or artist in the search bar."
-msgstr "Wygląda na to że nie wyszukiwałeś jeszcze żadnych utworów，Zacznij swoją muzyczną przygodę wpisując nazwę swojej ulubionej piosenki lub artysty w pasek wyszukiwania."
+msgstr ""
+"Wygląda na to że nie wyszukiwałeś jeszcze żadnych utworów，Zacznij swoją "
+"muzyczną przygodę wpisując nazwę swojej ulubionej piosenki lub artysty w "
+"pasek wyszukiwania."
 
-#: templates/index.html:459
+#: templates/index.html:461
 msgid "Search Now"
 msgstr "Szukaj"
 
-#: templates/index.html:468
+#: templates/index.html:470
 msgid "Server Not Detected"
 msgstr "Nie wykryto serwera"
 
-#: templates/index.html:470
+#: templates/index.html:472
 msgid ""
 "Ensure that I’m added to your server. Please\n"
 "                            note, you must possess ‘Manage Guild’ "
 "permissions on\n"
 "                            the server you wish to manage."
-msgstr "Upewnij się, że bot jest dodany do serwera oraz że ma przydzielone uprawnienie ‘Manage Guild’."
+msgstr ""
+"Upewnij się, że bot jest dodany do serwera oraz że ma przydzielone "
+"uprawnienie ‘Manage Guild’."
 
-#: templates/index.html:476
+#: templates/index.html:478
 msgid "Refresh page"
 msgstr "Odśwież stronę"
 
-#: templates/index.html:485
+#: templates/index.html:487
 msgid "Lyrics Not Found"
 msgstr "Tekst nie został odnaleziony"
 
-#: templates/index.html:487
+#: templates/index.html:489
 msgid ""
 "Sorry, but I’m unable to search for the lyrics\n"
 "                            of this song. Please try searching online."
-msgstr "Niestety, nie mogę odnaleść tekstu tej piosenki. Spróbuj poszukać go online."
+msgstr ""
+"Niestety, nie mogę odnaleść tekstu tej piosenki. Spróbuj poszukać go "
+"online."
 
-#: templates/index.html:498
+#: templates/index.html:500
 msgid "Temporary Access Limit Reached"
 msgstr "Osiągnięto tymczasowy limit dostępu"
 
-#: templates/index.html:500
+#: templates/index.html:502
 msgid ""
 "It appears you’ve been quite active and have\n"
 "                            reached the limit for requests. Don’t worry, "
@@ -615,121 +633,127 @@ msgid ""
 "                            only temporary. You’ll be able to continue "
 "your\n"
 "                            activities after a short break."
-msgstr "Wygląda na to, że byłeś dość aktywny i osiągnąłeś limit zapytań. Będziesz mógł kontynuować aktywność po krótkiej przerwie."
+msgstr ""
+"Wygląda na to, że byłeś dość aktywny i osiągnąłeś limit zapytań. Będziesz"
+" mógł kontynuować aktywność po krótkiej przerwie."
 
-#: templates/index.html:516
+#: templates/index.html:518
 msgid "Recently played"
 msgstr "Ostatnio odtwarzane"
 
-#: templates/index.html:537
+#: templates/index.html:539
 msgid "Based on your song playback history"
 msgstr "Bazowane na twojej historii odtwarzania"
 
-#: templates/index.html:540
+#: templates/index.html:542
 msgid "Recommendation for today"
 msgstr "Polecane na dziś"
 
-#: templates/index.html:583
+#: templates/index.html:562
 msgid "Top 50 Global Hits"
 msgstr "Top 50 światowych hitów"
 
-#: templates/index.html:584
+#: templates/index.html:563
 msgid "Trending Songs"
 msgstr "Popularne utwory"
 
-#: templates/index.html:604
+#: templates/index.html:583
 msgid "Discover music for every mood"
 msgstr "Odkryj muzykę na dzisiejszy nastrój"
 
-#: templates/index.html:605
+#: templates/index.html:584
 msgid "Genres and Moods"
 msgstr "Gatunki i nastroje"
 
-#: templates/index.html:629
+#: templates/index.html:608
 msgid ""
 "Manage your account settings and\n"
 "                                    preferences"
 msgstr "Zarządzaj swoimi ustawieniami konta oraz preferencjami"
 
-#: templates/index.html:670
+#: templates/index.html:649
 msgid "Dark Mode"
 msgstr "Tryb ciemny"
 
-#: templates/index.html:672
+#: templates/index.html:651
 msgid ""
 "Quickly toggle between light and\n"
 "                                        dark modes for a personalized."
 msgstr "Szybko przełączaj pomiędzy trybem ciemnym a jasnym."
 
-#: templates/index.html:723 templates/index.html:928
+#: templates/index.html:703 templates/index.html:911
 msgid "Queue"
 msgstr "Kolejka"
 
-#: templates/index.html:731
+#: templates/index.html:711
 msgid "Toggle History"
 msgstr "Historia"
 
-#: templates/index.html:739
+#: templates/index.html:719
 msgid "Close"
 msgstr "Zamknij"
 
-#: templates/index.html:750
+#: templates/index.html:730
 msgid "Now playing"
 msgstr "Aktualnie odtwarzane"
 
-#: templates/index.html:787
+#: templates/index.html:767
 msgid "Next in queue"
 msgstr "Następne w kolejce"
 
-#: templates/index.html:788
+#: templates/index.html:768
 msgid "Clear queue"
 msgstr "Wyczyść kolejkę"
 
-#: templates/index.html:798
+#: templates/index.html:778
 msgid "History queue"
 msgstr "Historia kolejki"
 
-#: templates/index.html:800
+#: templates/index.html:780
 msgid "Clear history"
 msgstr "Wyczyść historię"
 
-#: templates/index.html:809
+#: templates/index.html:789
 msgid "BACK TO TOP"
 msgstr "POWRÓT DO GÓRY"
 
-#: templates/index.html:834
+#: templates/index.html:793
+msgid "Autoplay"
+msgstr "Autoodtwarzanie"
+
+#: templates/index.html:817
 msgid "Rewind 10s"
 msgstr "Cofnij 10s"
 
-#: templates/index.html:842
+#: templates/index.html:825
 msgid "Shuffle"
 msgstr "Przemieszaj"
 
-#: templates/index.html:850
+#: templates/index.html:833
 msgid "Back"
 msgstr "Cofnij"
 
-#: templates/index.html:858
+#: templates/index.html:841
 msgid "Play"
 msgstr "Odtwarzaj"
 
-#: templates/index.html:866
+#: templates/index.html:849
 msgid "Skip"
 msgstr "Pomiń"
 
-#: templates/index.html:874
+#: templates/index.html:857
 msgid "Repeat"
 msgstr "Powtórz"
 
-#: templates/index.html:882
+#: templates/index.html:865
 msgid "Forward 10s"
 msgstr "Przewiń 10s"
 
-#: templates/index.html:911
+#: templates/index.html:894
 msgid "Volume"
 msgstr "Głośność"
 
-#: templates/index.html:920
+#: templates/index.html:903
 msgid "Effect"
 msgstr "Efekty"
 

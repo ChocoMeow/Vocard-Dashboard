@@ -1766,19 +1766,22 @@ input {
 	grid-area: queue;
 	justify-self: end;
 	width: 25rem;
-	padding: 2.1875rem 0.75rem 0.3125rem 0.75rem;
+	padding: 0.3125rem;
 	display: flex;
 	flex-direction: column;
-	gap: 1.5625rem;
 	background-color: var(--sub-bg);
+	gap: 0.3125rem;
 	transition:
 		width 0.3s ease-in-out,
 		padding 0.3s ease-in-out;
 	&.close {
 		width: 0rem;
-		padding: 2.1875rem 0rem 0.3125rem 0rem;
+		padding: 0.3125rem 0rem;
 	}
 	.header {
+		&.small-padding {
+			padding-block: 1.25rem;
+		}
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -1966,6 +1969,35 @@ input {
 		.queue {
 			display: flex;
 			flex-direction: column;
+		}
+	}
+	.autoplay-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.6rem;
+		transition: all ease-in-out 0.2s;
+		overflow: hidden;
+		border-radius: 0.5rem;
+		border: 0.125rem solid var(--active-bg);
+		cursor: pointer;
+
+		&:hover {
+			background-color: color-mix(in srgb, var(--active-bg) 80%, white);
+		}
+
+		&.active {
+			background-color: var(--active-bg);
+
+			&:hover {
+				background-color: color-mix(in srgb, var(--active-bg) 80%, white);
+			}
+		}
+
+		p {
+			text-wrap: nowrap;
+			font-size: 1rem;
+			color: var(--sub-text);
 		}
 	}
 }

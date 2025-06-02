@@ -299,7 +299,7 @@ function buildQueueTrackHtml(track) {
         <div class="left">
             <div class="thumbnail">
                 <img class="track-img" src="${track.artworkUrl}" onerror="this.src='/static/img/notFound.png'" alt="">
-                <img class="requester-img" src="${track?.requester?.avatarUrl}" alt="">
+                <img class="requester-img" src="${track?.requester?.avatarUrl}" onerror="this.src='/static/img/notFound.png'" alt="">
             </div>
             <div class="track-info">
                 <p class="title">${track.title}</a>
@@ -1157,6 +1157,10 @@ $(document).ready(function () {
                 case "reload-settings-page":
                     build_server_page();
                     break;
+                
+                case "autoplay":
+                    const status = !player.autoplay
+                    player.send({ op: "toggleAutoplay", status })
                 default:
                     return;
             }

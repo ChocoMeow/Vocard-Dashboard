@@ -75,7 +75,7 @@ async def setup():
         if not lang.startswith(".")
     ]
     for lang_code in lang_codes:
-        LANGUAGES[lang_code] = {"name": Locale.parse(lang_code).get_display_name(lang_code)}
+        LANGUAGES[lang_code] = {"name": Locale.parse(lang_code).get_display_name(lang_code).capitalize()}
 
     process_js_files()
     compile_scss()

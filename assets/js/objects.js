@@ -149,7 +149,7 @@ class ToastManager {
             avatarUrl = `/static/img/${userId}.png`;
             type = userId;
         } else {
-            avatarUrl = this.player.users[userId]?.avatarUrl;
+            avatarUrl = this.player.users[userId]?.avatarUrl || '/static/img/notFound.png';
             type = "success";
         }
 
@@ -1269,7 +1269,7 @@ class Player {
         this.updateImage("#now-playing-img", this.currentTrack?.artworkUrl);
         this.updateImage(
             "#now-playing-requester-img",
-            this.currentTrack?.requester.avatarUrl
+            this.currentTrack?.requester?.avatarUrl || '/static/img/notFound.png'
         );
 
         const colorThief = new ColorThief();
@@ -1406,7 +1406,6 @@ class Player {
                     ? "∞"
                     : msToReadableTime(currentTrack.length)
                 : "00:00",
-            "#auto-play": this.autoplay || false,
             "#play-pause-btn":
                 this.isPaused || !currentTrack ? "play_circle" : "pause_circle",
             "#repeat-btn": this.repeat == "track" ? "repeat_one" : "repeat",
@@ -1419,6 +1418,8 @@ class Player {
                 $element.text(newValue);
             }
         });
+
+        $("#autoplay-btn").toggleClass("active", this.autoplay)
 
         if (this.isPaused || !currentTrack) {
             this.timer.stop();
