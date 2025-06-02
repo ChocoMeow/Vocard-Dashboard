@@ -560,7 +560,7 @@ msgid "Reload Page"
 msgstr "Przeładuj stronę"
 
 #: templates/index.html:450
-msgid "No Hisotry Searches Found"
+msgid "No History Searches Found"
 msgstr "Brak historii wyszukiwania"
 
 #: templates/index.html:452
