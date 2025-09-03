@@ -1909,7 +1909,7 @@ $(document).ready(function () {
         if ($("#global-top-tracks").has(".skeleton").length) {
             player.send({
                 op: "getTracks",
-                query: "https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF",
+                query: "https://music.youtube.com/playlist?list=PL4fGSI1pDJn6puJdseH2Rt9sMvt9E2M4i",
                 callback: "global-top-tracks",
             })
         }
