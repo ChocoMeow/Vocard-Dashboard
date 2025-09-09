@@ -1045,7 +1045,6 @@ $(document).ready(function () {
         if ($btn.length) {
             let btnName = $btn.attr("id").replace("-btn", "")
             let currentTrack = player.currentTrack
-            console.log(btnName)
             switch (btnName) {
                 case "menu-bar":
                     let $menuContainer = $(".menu-container")
