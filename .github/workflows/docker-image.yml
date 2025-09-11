@@ -1,29 +1,67 @@
 name: Docker Image CI
 
 on:
-  push:
-    branches: [ "main" ]
-    paths-ignore:
-        - '**.md'
+    push:
+        tags:
+            - "*" # Trigger on any tag
+        branches:
+            - main # Trigger on push to main branch
+            - beta # Trigger on push to beta branch
+        paths-ignore:
+            - "**.md"
 
 permissions:
-  packages: write
+    packages: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build:
+        runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v4
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag vocard-dashboard:latest
-      
-    - name: Log in to GitHub Docker Registry
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+        steps:
+            - uses: actions/checkout@v4
 
-    - name: Push the Docker image
-      run: |
-        docker tag vocard-dashboard:latest ghcr.io/chocomeow/vocard-dashboard:latest  # Ensure lowercase
-        docker push ghcr.io/chocomeow/vocard-dashboard:latest  # Ensure lowercases
+            - name: Set up Docker Buildx
+              uses: docker/setup-buildx-action@v3
+
+            - name: Log in to GitHub Docker Registry
+              uses: docker/login-action@v3
+              with:
+                  registry: ghcr.io
+                  username: ${{ github.actor }}
+                  password: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Extract metadata
+              id: meta
+              uses: docker/metadata-action@v5
+              with:
+                  images: ghcr.io/chocomeow/vocard-dashboard
+                  tags: |
+                      # For version tags (v1.2.3)
+                      type=ref,event=tag
+                      # For main branch
+                      type=raw,value=latest,enable={{is_default_branch}}
+                      # For beta branch
+                      type=raw,value=beta,enable=${{ github.ref == 'refs/heads/beta' }}
+                  flavor: |
+                      latest=false
+
+            - name: Build and push Docker image
+              uses: docker/build-push-action@v5
+              with:
+                  context: .
+                  file: ./Dockerfile
+                  push: true
+                  tags: ${{ steps.meta.outputs.tags }}
+                  labels: ${{ steps.meta.outputs.labels }}
+                  platforms: linux/amd64,linux/arm64
+                  cache-from: type=gha
+                  cache-to: type=gha,mode=max
+
+            - name: Delete untagged images
+              uses: actions/delete-package-versions@v5
+              with:
+                  package-name: "vocard-dashboard"
+                  package-type: "container"
+                  min-versions-to-keep: 0
+                  delete-only-untagged-versions: true
+              continue-on-error: true
