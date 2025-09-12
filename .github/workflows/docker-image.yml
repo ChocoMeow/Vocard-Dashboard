@@ -62,12 +62,3 @@ jobs:
                   platforms: linux/amd64,linux/arm64
                   cache-from: type=gha
                   cache-to: type=gha,mode=max
-
-            - name: Delete untagged images
-              uses: actions/delete-package-versions@v5
-              with:
-                  package-name: "vocard-dashboard"
-                  package-type: "container"
-                  min-versions-to-keep: 0
-                  delete-only-untagged-versions: true
-              continue-on-error: true
