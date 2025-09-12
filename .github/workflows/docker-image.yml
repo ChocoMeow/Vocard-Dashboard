@@ -38,10 +38,16 @@ jobs:
                   tags: |
                       # For version tags (v1.2.3)
                       type=ref,event=tag
+                      type=ref,event=tag,suffix=-amd64
+                      type=ref,event=tag,suffix=-arm64
                       # For main branch
                       type=raw,value=latest,enable={{is_default_branch}}
+                      type=raw,value=latest-amd64,enable={{is_default_branch}}
+                      type=raw,value=latest-arm64,enable={{is_default_branch}}
                       # For beta branch
                       type=raw,value=beta,enable=${{ github.ref == 'refs/heads/beta' }}
+                      type=raw,value=beta-amd64,enable=${{ github.ref == 'refs/heads/beta' }}
+                      type=raw,value=beta-arm64,enable=${{ github.ref == 'refs/heads/beta' }}
                   flavor: |
                       latest=false
 
@@ -56,3 +62,12 @@ jobs:
                   platforms: linux/amd64,linux/arm64
                   cache-from: type=gha
                   cache-to: type=gha,mode=max
+
+            - name: Delete untagged images
+              uses: actions/delete-package-versions@v5
+              with:
+                  package-name: "vocard-dashboard"
+                  package-type: "container"
+                  min-versions-to-keep: 0
+                  delete-only-untagged-versions: true
+              continue-on-error: true
