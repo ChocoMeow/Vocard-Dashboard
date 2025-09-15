@@ -124,11 +124,11 @@ def process_js_files() -> None:
             
             try:
                 # Compress the JS file
-                with open(input_path, "r") as source_file:
+                with open(input_path, "r", encoding="utf-8") as source_file:
                     compressed_js = jsmin(source_file.read(), quote_chars="'\"`")
                 
                 # Write compiled JS to the JS directory
-                with open(output_path, "w") as js_file:
+                with open(output_path, "w", encoding="utf-8") as js_file:
                     js_file.write(compressed_js)
                 
                 LOGGER.debug(f"Successfully processed {js_file}.")
@@ -154,7 +154,7 @@ def compile_scss() -> None:
                 compiled_css = sass.compile(filename=scss_path, include_paths=[SCSS_DIR], output_style="compressed")
                 
                 # Write compiled CSS to the CSS directory
-                with open(css_path, "w") as css_file:
+                with open(css_path, "w", encoding="utf-8") as css_file:
                     css_file.write(compiled_css)
 
                 LOGGER.debug(f"Successfully compiled {scss_file}.")
