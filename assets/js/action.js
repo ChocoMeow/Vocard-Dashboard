@@ -573,6 +573,10 @@ $(document).ready(function () {
     const player = new Player()
 
     $(document).keydown(function (e) {
+        const $target = $(e.target)
+        const isInputField = $target.is("input, textarea") || $target.prop("isContentEditable")
+        if (isInputField) return
+
         const { key, altKey, ctrlKey, metaKey } = e
 
         const keyMap = {
@@ -586,8 +590,6 @@ $(document).ready(function () {
             skipTo: "ArrowDown",
             shortcuts: "/",
         }
-
-        const isInputField = $(document.activeElement).is("input, textarea")
 
         // Check for Alt/Cmd or Ctrl + Key combinations
         if (altKey || ctrlKey || metaKey) {
@@ -621,7 +623,7 @@ $(document).ready(function () {
 
         switch (key) {
             case keyMap.playPause:
-                if (isInputField) return
+                e.preventDefault()
                 player.togglePause()
                 break
             case keyMap.seekForward:
