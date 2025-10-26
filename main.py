@@ -16,6 +16,7 @@ from quart import (
     render_template,
     redirect,
     url_for,
+    jsonify,
     session,
     websocket,
     request
@@ -83,6 +84,10 @@ async def setup():
     process_js_files()
     compile_scss()
     await download_geoip_db()
+
+@app.route("/health", methods=["GET"])
+async def health():
+    return jsonify({"status": "ok"}), 200
 
 @app.route("/", methods=["GET"])
 async def home():
