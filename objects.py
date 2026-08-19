@@ -18,6 +18,11 @@ from utils import (
     LOGGER,
     requests_api
 )
+from health import (
+    configure_admin_user_id,
+    normalize_admin_user_id,
+    prepare_outbound_payload,
+)
 
 class Asset:
     def __init__(self, id: str, key: str):
@@ -90,7 +95,7 @@ class User:
     
     async def send(self, payload: Dict) -> None:
         if self._websocket:
-            await self._websocket.send_json(payload)
+            await self._websocket.send_json(prepare_outbound_payload(payload, self.id))
             
     async def _listen(self) -> None:
         while True:
@@ -344,6 +349,11 @@ class Settings:
         self.client_secret_id: str = self.get_setting("client_secret_id") or os.getenv("CLIENT_SECRET_ID")
         self.secret_key: str = self.get_setting("secret_key") or os.getenv("SECRET_KEY")
         self.redirect_url: str = self.get_setting("redirect_url") or os.getenv("REDIRECT_URL")
+        raw_admin_user_id = self.get_setting("admin_user_id")
+        if raw_admin_user_id is None:
+            raw_admin_user_id = os.getenv("ADMIN_USER_ID")
+        self.admin_user_id: Optional[str] = normalize_admin_user_id(raw_admin_user_id)
+        configure_admin_user_id(self.admin_user_id)
 
         self.logging: Dict[str, Any] = self.get_setting("logging")
 

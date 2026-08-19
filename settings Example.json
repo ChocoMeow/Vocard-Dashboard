@@ -6,6 +6,7 @@
     "client_secret_id": "",
     "secret_key": "",
     "redirect_url": "http://127.0.0.1:8000/callback",
+    "admin_user_id": "",
     "logging": {
         "file": {
             "path": "./logs",

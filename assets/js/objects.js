@@ -321,6 +321,12 @@ const methods = {
         player.filters = data?.filters;
         player.updateFilterView();
 
+        if (data.health) {
+            methods.playbackHealth(player, data.health);
+        } else {
+            player.send({ op: "getHealth" });
+        }
+
         $("#queue").sortable({
             animation: 150,
             ghostClass: "sortable-ghost",
@@ -998,6 +1004,14 @@ const methods = {
     errorMsg: function (player, data) {
         player.tm.showToast(data["level"], data["msg"]);
     },
+
+    playbackHealth: function (player, data) {
+        player.lastPlaybackHealth = data || {};
+        player.isHealthAdmin = data?.admin === true;
+        if (typeof updatePlaybackHealthBar === "function") {
+            updatePlaybackHealthBar(data || {});
+        }
+    },
 };
 
 class Player {
@@ -1041,6 +1055,8 @@ class Player {
 
         this.filters = [];
         this.availableFilters = [];
+        this.lastPlaybackHealth = null;
+        this.isHealthAdmin = false;
 
         this.positionBar = $("#position-bar");
         this.volumeBar = $("#volume-bar");
@@ -1082,6 +1098,11 @@ class Player {
         this.autoplay = false;
         this.channelName = "";
         this.filters = [];
+        this.lastPlaybackHealth = null;
+        this.isHealthAdmin = false;
+        if (typeof resetPlaybackHealthUi === "function") {
+            resetPlaybackHealthUi();
+        }
 
         this.updateCurrentQueuePos();
         this.updateSelectedBotView();

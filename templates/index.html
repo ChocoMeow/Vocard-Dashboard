@@ -216,11 +216,29 @@
                     removeTrack: "{{ _('Remove track') }}",
                     addToPlaylist: "{{ _('Add to playlist') }}",
                 },
+                diagnostics: {
+                    title: "{{ _('Diagnostics') }}",
+                    playbackHealth: "{{ _('Playback Health') }}",
+                    viewDiagnostics: "{{ _('View diagnostics') }}",
+                    allHealthy: "{{ _('All playback services are operating normally.') }}",
+                    status: "{{ _('Status') }}",
+                    installed: "{{ _('Installed') }}",
+                    version: "{{ _('Version') }}",
+                    lastFailure: "{{ _('Last Playback Failure') }}",
+                    lastError: "{{ _('Last Error') }}",
+                    showDetails: "{{ _('Show details') }}",
+                    hideDetails: "{{ _('Hide details') }}",
+                    close: "{{ _('Close') }}",
+                    track: "{{ _('Track') }}",
+                    source: "{{ _('Source') }}",
+                    classification: "{{ _('Classification') }}",
+                },
             }
         </script>
 
         <script type="text/javascript" src="{{ url_for('static', filename='js/utils.min.js') }}"></script>
         <script type="text/javascript" src="{{ url_for('static', filename='js/websocket.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/playback-health-ui.min.js') }}"></script>
         <script type="text/javascript" src="{{ url_for('static', filename='js/objects.min.js') }}"></script>
         <script type="text/javascript" src="{{ url_for('static', filename='js/action.min.js') }}"></script>
         <script type="text/javascript" src="{{ url_for('static', filename='js/transformer.min.js') }}"></script>
@@ -239,6 +257,17 @@
                 <div class="warning-bar">
                     <div class="loader" style="width: 14px"></div>
                     <p>{{ _("Some errors occurred and the dashboard could not be connected") }}</p>
+                </div>
+                <div class="playback-health-bar" id="playback-health-bar" style="display: none">
+                    <button type="button" class="playback-health-close" id="playback-health-close" aria-label="{{ _('Close') }}">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+                    <div class="playback-health-content">
+                        <div id="playback-health-message"></div>
+                        <button type="button" class="playback-health-link" id="playback-health-diagnostics-link" style="display: none">
+                            {{ _("View diagnostics") }}
+                        </button>
+                    </div>
                 </div>
                 <div class="sections error-container" id="bot-not-found">
                     <img src="{{ url_for('static', filename='img/not-found.svg') }}" alt />
@@ -408,6 +437,29 @@
                                 <div class="color" data-id="blue" style="background-color: #02bbff"></div>
                                 <div class="color" data-id="green" style="background-color: #00cc88"></div>
                             </div>
+                        </div>
+                    </div>
+                    {% include "footer.html" %}
+                </div>
+                <div class="sections" id="diagnostics-page">
+                    <div class="section">
+                        <div class="header">
+                            <div class="sub-title">
+                                <p>{{ _("Playback Health") }}</p>
+                                <h2>{{ _("Diagnostics") }}</h2>
+                            </div>
+                        </div>
+                        <p class="diagnostics-healthy-msg" id="diagnostics-healthy-msg" style="display: none"></p>
+                        <div class="diagnostics-grid" id="diagnostics-components"></div>
+                        <div class="diagnostics-card" id="diagnostics-failure" style="display: none">
+                            <p class="diagnostics-card-title" id="diagnostics-failure-title"></p>
+                            <dl class="diagnostics-meta" id="diagnostics-failure-meta"></dl>
+                        </div>
+                        <div class="diagnostics-card" id="diagnostics-error" style="display: none">
+                            <p class="diagnostics-card-title" id="diagnostics-error-title"></p>
+                            <p class="diagnostics-error-preview" id="diagnostics-error-preview"></p>
+                            <button type="button" class="playback-health-link" id="diagnostics-error-toggle" style="display: none"></button>
+                            <pre class="diagnostics-error-full" id="diagnostics-error-full" style="display: none"></pre>
                         </div>
                     </div>
                     {% include "footer.html" %}
