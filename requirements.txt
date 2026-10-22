@@ -1,4 +1,4 @@
-aiohttp>=3.12.16
+aiohttp>=3.14.4
 quart==0.20.0
 quart_babel==1.0.7
 geoip2==4.8.1
